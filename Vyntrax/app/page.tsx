@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Section from "@/components/Section";
-import HeroVisual from "@/components/HeroVisual";
+import LaptopHero from "@/components/LaptopHero";
 import SocialProof from "@/components/SocialProof";
 import BentoGrid from "@/components/BentoGrid";
 import CTASection from "@/components/CTASection";
@@ -92,8 +92,8 @@ export default function Home() {
             </div>
 
             {/* Rechts: 3D Visual Element */}
-            <div className="block mt-12 lg:mt-0">
-              <HeroVisual />
+            <div className="block mt-12 lg:mt-0 h-[600px] lg:h-[800px]">
+              <LaptopHero />
             </div>
           </div>
         </Section>
