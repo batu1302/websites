@@ -3,6 +3,55 @@
 
   var CONSENT_KEY = "dr_barbershop_legal_v1";
 
+  var prefersReducedMotion =
+    typeof window.matchMedia === "function" &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  var headerEl = document.getElementById("site-header");
+  function updateHeaderScroll() {
+    if (!headerEl) return;
+    if (window.scrollY > 56) {
+      headerEl.classList.add("is-scrolled");
+    } else {
+      headerEl.classList.remove("is-scrolled");
+    }
+  }
+  updateHeaderScroll();
+  window.addEventListener("scroll", updateHeaderScroll, { passive: true });
+
+  var revealNodes = document.querySelectorAll("[data-reveal]");
+  if (revealNodes.length > 0) {
+    var revealObserver = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: "0px 0px -6% 0px" }
+    );
+    revealNodes.forEach(function (el) {
+      revealObserver.observe(el);
+    });
+  }
+
+  if (!prefersReducedMotion) {
+    var heroParallax = document.getElementById("hero-bg-parallax");
+    var heroSection = document.querySelector(".hero");
+    if (heroParallax && heroSection) {
+      heroSection.addEventListener("mousemove", function (event) {
+        var x = (event.clientX / window.innerWidth - 0.5) * 18;
+        var y = (event.clientY / window.innerHeight - 0.5) * 14;
+        heroParallax.style.transform = "translate(" + x + "px, " + y + "px)";
+      });
+      heroSection.addEventListener("mouseleave", function () {
+        heroParallax.style.transform = "";
+      });
+    }
+  }
+
   var nav = document.querySelector(".nav");
   var toggle = document.querySelector(".nav-toggle");
 

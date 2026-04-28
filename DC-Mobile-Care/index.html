@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0D0D0D">
+  <meta name="description"
+    content="DC Mobile Care — exklusiver mobiler Auto-Detailing-Service in Bisingen, Balingen und Umgebung. Tiefenreinigung, Politur, Keramikversiegelung. Wir kommen zu Ihnen.">
+  <meta property="og:title" content="DC Mobile Care · Mobile Detailing in Bisingen &amp; Balingen">
+  <meta property="og:description" content="Premium-Pflege für Lack, Felgen und Innenraum — direkt vor Ihrer Tür. Wir kommen zu Ihnen.">
+  <meta property="og:image" content="https://dcmobilecare.de/assets/hero_after.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/jpeg" href="assets/653383321_18068160239657542_3199317920069265713_n.jpg">
+  <title>DC Mobile Care · Mobile Detailing in Bisingen &amp; Balingen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syncopate:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="#home" aria-label="DC Mobile Care — Startseite">
+      <span class="brand-mark">
+        <img src="assets/653383321_18068160239657542_3199317920069265713_n.jpg" alt="">
+      </span>
+      <span class="brand-name">
+        <span class="brand-name-top">DC</span>
+        <span class="brand-name-bottom">Mobile Care</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Hauptnavigation" data-nav>
+      <a href="#hero">Start</a>
+      <a href="#explore">Leistungen</a>
+      <a href="#process">Behind the Scenes</a>
+      <a href="#area">Servicegebiet</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+
+    <a class="header-cta shimmer magnetic" href="#contact">
+      <span>Termin anfragen</span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Navigation öffnen" aria-expanded="false" data-menu-toggle>
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- ========================== HERO: BEFORE / AFTER ========================== -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero-frame">
+
+        <div class="ba-slider" data-ba style="--pos:50%" role="slider" tabindex="0"
+          aria-label="Vorher / Nachher Vergleich — ziehen Sie den silbernen Griff" aria-valuemin="0" aria-valuemax="100"
+          aria-valuenow="50">
+          <div class="ba-image ba-before" aria-hidden="true">
+            <img src="assets/hero_before.png" alt="Matte, dreckige Oberfläche vor der Pflege">
+            <span class="ba-tag ba-tag-before">Vorher</span>
+          </div>
+          <div class="ba-image ba-after" aria-hidden="true">
+            <img src="assets/hero_after.png" alt="Hochglanz Keramikversiegelung nach der Pflege">
+            <span class="ba-tag ba-tag-after">Nachher</span>
+          </div>
+
+          <div class="ba-divider" aria-hidden="true">
+            <button class="ba-handle" type="button" aria-hidden="true" tabindex="-1">
+              <i class="fa-solid fa-arrows-left-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-overlay">
+          <p class="eyebrow">Mobile Detailing · Bisingen · Balingen · Region</p>
+          <h1 id="hero-title" class="display">
+            <span>Einfach</span>
+            <span>Sauber.</span>
+            <span class="display-soft">Überall.</span>
+          </h1>
+          <p class="hero-sub">
+            Premium-Pflege für Lack, Felgen und Innenraum — direkt vor Ihrer Tür.
+            Detailverliebt. Diskret. Auf Wunsch im Abo.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary shimmer magnetic" href="#contact">
+              <span>Persönliches Angebot</span>
+            </a>
+            <a class="btn btn-ghost" href="#explore">
+              Leistungen entdecken
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+          <p class="hero-pricing">
+            <i class="fa-solid fa-tag"></i> Service-Pakete ab 149 €
+          </p>
+        </div>
+
+        <p class="hero-hint" aria-hidden="true">
+          <span class="hero-hint-dot"></span>
+          Slider ziehen — Schmutz wegwischen
+        </p>
+      </div>
+    </section>
+
+    <!-- ========================== INTERACTIVE WIREFRAME CAR ========================== -->
+    <section class="section explore" id="explore" aria-labelledby="explore-title">
+      <header class="section-head">
+        <p class="eyebrow">Interaktive Service-Erkundung</p>
+        <h2 id="explore-title" class="display display-md">
+          Hover über das Fahrzeug.<br>
+          <span class="display-soft">Wir zeigen Ihnen, wo wir 
+            <span class="glaenzen-anim">
+              <span>g</span><span>l</span><span>ä</span><span>n</span><span>z</span><span>e</span><span>n</span><span>.</span>
+            </span>
+          </span>
+        </h2>
+      </header>
+
+      <div class="explore-stage" data-explore>
+        <div class="explore-car">
+
+          <!-- Wireframe car (top-down silhouette) -->
+          <svg class="car" viewBox="0 0 800 1200" xmlns="http://www.w3.org/2000/svg"
+            aria-label="Wireframe Auto Silhouette — interaktiv" role="img">
+            <defs>
+              <linearGradient id="carShade" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0" stop-color="#2a2a2a" />
+                <stop offset="1" stop-color="#141414" />
+              </linearGradient>
+              <radialGradient id="zoneGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0" stop-color="#ffffff" stop-opacity="0.55" />
+                <stop offset="0.6" stop-color="#ffffff" stop-opacity="0.06" />
+                <stop offset="1" stop-color="#ffffff" stop-opacity="0" />
+              </radialGradient>
+            </defs>
+
+            <!-- Photorealistic Car Image -->
+            <image href="assets/top_down_luxury_car.png" x="-100" y="0" width="1000" height="1200"
+              preserveAspectRatio="xMidYMid slice" />
+
+            <!-- ====== HOTSPOT ZONES (interactive) ====== -->
+
+            <g class="zones">
+              <!-- Lack / Hood -->
+              <g class="zone" data-zone="lack" tabindex="0" role="button" aria-label="Zone Lack">
+                <ellipse class="zone-glow" cx="400" cy="190" rx="240" ry="150" fill="url(#zoneGlow)" />
+                <ellipse class="zone-hit" cx="400" cy="190" rx="220" ry="150" fill="transparent"
+                  stroke="rgba(255,255,255,0.0)" stroke-width="1" />
+                <circle class="zone-dot" cx="400" cy="190" r="6" />
+              </g>
+
+              <!-- Felgen -->
+              <g class="zone" data-zone="felgen" tabindex="0" role="button" aria-label="Zone Felgen">
+                <circle class="zone-glow" cx="152" cy="280" r="80" fill="url(#zoneGlow)" />
+                <circle class="zone-glow" cx="648" cy="280" r="80" fill="url(#zoneGlow)" />
+                <circle class="zone-glow" cx="152" cy="920" r="80" fill="url(#zoneGlow)" />
+                <circle class="zone-glow" cx="648" cy="920" r="80" fill="url(#zoneGlow)" />
+                <rect class="zone-hit" x="115" y="210" width="75" height="780" fill="transparent" />
+                <rect class="zone-hit" x="610" y="210" width="75" height="780" fill="transparent" />
+                <circle class="zone-dot" cx="152" cy="280" r="6" />
+                <circle class="zone-dot" cx="648" cy="280" r="6" />
+              </g>
+
+              <!-- Lenkrad -->
+              <g class="zone" data-zone="lenkrad" tabindex="0" role="button" aria-label="Zone Lenkrad">
+                <circle class="zone-glow" cx="320" cy="540" r="120" fill="url(#zoneGlow)" />
+                <circle class="zone-hit" cx="320" cy="540" r="80" fill="transparent" />
+                <circle class="zone-dot" cx="320" cy="540" r="6" />
+              </g>
+
+              <!-- Interieur -->
+              <g class="zone" data-zone="interieur" tabindex="0" role="button" aria-label="Zone Interieur">
+                <ellipse class="zone-glow" cx="400" cy="700" rx="260" ry="220" fill="url(#zoneGlow)" />
+                <rect class="zone-hit" x="220" y="450" width="360" height="500" fill="transparent" />
+                <circle class="zone-dot" cx="480" cy="700" r="6" />
+              </g>
+            </g>
+          </svg>
+
+          <p class="explore-hint" aria-hidden="true">Hover oder antippen</p>
+        </div>
+
+        <!-- Floating glassmorphism cards -->
+        <div class="explore-cards">
+          <article class="zone-card" data-card="lack">
+            <p class="zone-card-eyebrow">Lack</p>
+            <h3>Politur · Versiegelung</h3>
+            <p>Mehrstufige Maschinenpolitur entfernt Hologramme und Swirls.
+              Anschließend versiegeln wir den Lack mit Premium-Keramik —
+              für tiefen Glanz und Schutz vor Insekten, UV und Wasserflecken.</p>
+          </article>
+
+          <article class="zone-card" data-card="felgen">
+            <p class="zone-card-eyebrow">Felgen</p>
+            <h3>Tiefenreinigung &amp; Versiegelung</h3>
+            <p>Säurefreier Felgenreiniger, Pinsel-Detailarbeit in jeder Speiche
+              und eine schmutzabweisende Versiegelung. Bremsstaub haftet nicht mehr —
+              die nächste Wäsche dauert nur die Hälfte der Zeit.</p>
+          </article>
+
+          <article class="zone-card" data-card="lenkrad">
+            <p class="zone-card-eyebrow">Lenkrad</p>
+            <h3>Leder-Renovierung</h3>
+            <p>Fett- und Schweißfilm wird mit pH-neutralem Leder-Cleaner gelöst,
+              tiefe Poren werden ausgebürstet und mit Pflegebalsam imprägniert.
+              Griffig wie am ersten Tag — nicht klebrig, nicht glänzend.</p>
+          </article>
+
+          <article class="zone-card" data-card="interieur">
+            <p class="zone-card-eyebrow">Interieur</p>
+            <h3>Tiefenreinigung Innenraum</h3>
+            <p>Polster, Teppich, Himmel und Kunststoffe werden mit Dampf und
+              Sprühextraktion bearbeitet. Gerüche werden auf molekularer Ebene
+              neutralisiert — kein Parfüm, kein "Neuwagen-Spray".</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================== BEHIND THE SCENES (Instagram) ========================== -->
+    <section class="section process" id="process" aria-labelledby="process-title">
+      <header class="section-head section-head-row">
+        <div>
+          <p class="eyebrow">Behind the Scenes</p>
+          <h2 id="process-title" class="display display-md">
+            Aus dem Studio.<br>
+            <span class="display-soft">Direkt von Instagram.</span>
+          </h2>
+        </div>
+        <a class="btn btn-ghost btn-ghost-lg" href="https://instagram.com/dcmobilecare" target="_blank" rel="noopener">
+          @dcmobilecare folgen
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </header>
+
+      <div class="ig-grid">
+        <div class="ig-tile ig-tile-tall">
+          <img src="assets/Gemini_Generated_Image_ntdttbntdttbntdt.png"
+            alt="Innenraum Detailing — Cockpit nach der Tiefenreinigung">
+          <div class="ig-meta">
+            <span>Cockpit · Tiefenreinigung</span>
+            <span class="ig-icon" aria-hidden="true">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="ig-tile ig-tile-wide">
+          <img src="assets/56a01e89-8fc8-4a0a-84e0-03e62acac3b0.jpeg" alt="Mercedes SUV nach Politur und Versiegelung">
+          <div class="ig-meta">
+            <span>Lack · Maschinenpolitur</span>
+            <span class="ig-icon" aria-hidden="true">
+              <i class="fa-solid fa-car-burst"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="ig-tile">
+          <img src="assets/Screenshot 2026-04-27 155331.png" alt="Mittelkonsole vor der Reinigung">
+          <div class="ig-meta">
+            <span>Vorher · Mittelkonsole</span>
+            <span class="ig-icon" aria-hidden="true">
+              <i class="fa-solid fa-clock-rotate-left"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="ig-tile">
+          <img src="assets/Screenshot 2026-04-27 155430.png" alt="Mittelkonsole nach der Detail-Reinigung">
+          <div class="ig-meta">
+            <span>Nachher · Mittelkonsole</span>
+            <span class="ig-icon" aria-hidden="true">
+              <i class="fa-solid fa-check"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="ig-tile ig-tile-portrait">
+          <img src="assets/654578123_18068163449657542_2305695200782834883_n.jpg"
+            alt="Davut Ceylan — Gründer DC Mobile Care">
+          <div class="ig-meta">
+            <span>Founder · Davut Ceylan</span>
+            <span class="ig-icon" aria-hidden="true">
+              <i class="fa-solid fa-user-tie"></i>
+            </span>
+          </div>
+          <div class="founder-overlay">
+            <p><strong>Hi, ich bin Davut.</strong> Deine Zeit ist wertvoll, dein Fahrzeug auch. Deshalb bringe ich absolute Premium-Fahrzeugpflege direkt zu dir nach Hause. Kein Warten, keine Kompromisse.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================== SERVICE AREA ========================== -->
+    <section class="section area" id="area" aria-labelledby="area-title">
+      <div class="area-grid">
+        <div>
+          <p class="eyebrow">Servicegebiet</p>
+          <h2 id="area-title" class="display display-md">
+            Bisingen.<br>Balingen.<br>
+            <span class="display-soft">&amp; alles dazwischen.</span>
+          </h2>
+          <p class="area-text">
+            Wir kommen mit voll ausgestattetem Detailing-Mobil zu Ihnen — ob in die
+            Tiefgarage, vor das Büro oder in die Privateinfahrt. Strom- und Wasseranschluss?
+            Bringen wir mit. Sie genießen Ihren Tag, wir kümmern uns um den Rest.
+          </p>
+
+          <ul class="area-chips" aria-label="Einsatzorte">
+            <li>Bisingen</li>
+            <li>Balingen</li>
+            <li>Hechingen</li>
+            <li>Albstadt</li>
+            <li>Geislingen</li>
+            <li>Haigerloch</li>
+            <li>Rangendingen</li>
+            <li>Grosselfingen</li>
+          </ul>
+        </div>
+
+        <div class="map-card">
+          <div class="map-visual">
+            <iframe title="Servicegebiet Bisingen / Balingen" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Bisingen%20Balingen&z=10&output=embed">
+            </iframe>
+            <div class="map-radius" aria-hidden="true"></div>
+            <div class="map-radar" aria-hidden="true"></div>
+            <div class="map-pin" aria-hidden="true"></div>
+            <div class="map-live-tag">
+              <span></span>
+              LIVE SERVICE
+            </div>
+          </div>
+          <div class="map-foot">
+            <strong>Zollernalbkreis · 72406</strong>
+            <span>Mobile Anfahrt im Umkreis von ~30 km</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================== REVIEWS ========================== -->
+    <section class="section reviews" id="reviews" aria-labelledby="reviews-title">
+      <div class="reviews-container">
+        <header class="section-head">
+          <p class="eyebrow">Kundenerfahrungen</p>
+          <h2 id="reviews-title" class="display display-md">
+            Nicht nur sauber.<br>
+            <span class="display-soft">Sondern perfekt.</span>
+          </h2>
+        </header>
+
+        <div class="reviews-grid">
+          <article class="review-card">
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">"Hätte nicht gedacht, dass mein Auto wieder riecht und aussieht wie ein Neuwagen. Der Service vor meiner eigenen Haustür ist einfach genial. Absolute Empfehlung!"</p>
+            <p class="review-author">— Michael T., Balingen</p>
+          </article>
+
+          <article class="review-card">
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">"Davut ist ein absoluter Perfektionist. Die Keramikversiegelung hat er mit so viel Liebe zum Detail aufgetragen. Unglaublicher Glanz, jeden Cent wert."</p>
+            <p class="review-author">— Sarah W., Hechingen</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================== CONTACT ========================== -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <header class="section-head">
+        <p class="eyebrow">Kontakt</p>
+        <h2 id="contact-title" class="display display-md">
+          Termin anfragen.<br>
+          <span class="display-soft">In 60 Sekunden.</span>
+        </h2>
+      </header>
+
+      <form class="contact-form" action="https://formspree.io/f/DEINE_FORMSPREE_ID" method="POST" novalidate>
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" placeholder="Ihr Name" autocomplete="name" required>
+        </label>
+        <label>
+          <span>Telefon</span>
+          <input type="tel" name="phone" placeholder="+49 ..." autocomplete="tel" required>
+        </label>
+        <label>
+          <span>E-Mail</span>
+          <input type="email" name="email" placeholder="ihre@email.de" autocomplete="email">
+        </label>
+        <label>
+          <span>Fahrzeug</span>
+          <input type="text" name="car" placeholder="Hersteller, Modell, Baujahr">
+        </label>
+        <label>
+          <span>Gewünschte Leistung</span>
+          <select name="service" required>
+            <option value="">Bitte auswählen</option>
+            <option>Innenraum — Tiefenreinigung</option>
+            <option>Außen — Wäsche &amp; Versiegelung</option>
+            <option>Politur (1- / 2-stufig)</option>
+            <option>Keramikversiegelung</option>
+            <option>Komplettpaket Innen + Außen</option>
+            <option>Beratungstermin</option>
+          </select>
+        </label>
+        <label>
+          <span>PLZ / Ort</span>
+          <input type="text" name="plz" placeholder="z. B. 72406 Bisingen">
+        </label>
+        <label class="full">
+          <span>Nachricht</span>
+          <textarea name="message" rows="4" placeholder="Was sollen wir wissen?"></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary btn-lg shimmer full">
+          <span>Anfrage senden</span>
+        </button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ========================== FOOTER ========================== -->
+  <footer class="site-footer">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <span class="brand-mark brand-mark-sm">
+          <img src="assets/653383321_18068160239657542_3199317920069265713_n.jpg" alt="">
+        </span>
+        <div>
+          <strong>DC Mobile Care</strong>
+          <span>Mobile Detailing · Bisingen &amp; Region</span>
+        </div>
+      </div>
+
+      <ul class="foot-areas" aria-label="Einsatzorte">
+        <li>Bisingen</li>
+        <li>Balingen</li>
+        <li>Hechingen</li>
+        <li>Albstadt</li>
+        <li>Geislingen</li>
+        <li>Haigerloch</li>
+        <li>Rangendingen</li>
+        <li>Grosselfingen</li>
+      </ul>
+
+      <div class="foot-social">
+        <a class="foot-social-link" href="https://wa.me/4915000000000" target="_blank" rel="noopener"
+          aria-label="WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp</span>
+        </a>
+        <a class="foot-social-link" href="https://instagram.com/dcmobilecare" target="_blank" rel="noopener"
+          aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+          <span>@dcmobilecare</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <span>© <span data-year>2026</span> DC Mobile Care · Davut Ceylan</span>
+      <div class="foot-legal">
+        <button type="button" data-modal-trigger="impressum">Impressum</button>
+        <button type="button" data-modal-trigger="datenschutz">Datenschutz</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================== FLOATING CTA ========================== -->
+  <a class="floating-cta shimmer" href="#contact" data-floating-cta aria-label="Termin anfragen">
+    <span class="floating-cta-dot" aria-hidden="true"></span>
+    <span>Termin anfragen</span>
+  </a>
+
+  <!-- ========================== LEGAL MODALS ========================== -->
+  <div class="modal-overlay" data-modal-overlay></div>
+
+  <div class="legal-modal" id="modal-impressum" data-modal>
+    <button class="modal-close" data-modal-close aria-label="Schließen"><i class="fa-solid fa-xmark"></i></button>
+    <div class="modal-content">
+      <h2>Impressum</h2>
+      <p><strong>DC Mobile Care</strong><br>
+        Inhaber: Davut Ceylan<br>
+        Musterstraße 123<br>
+        72406 Bisingen</p>
+
+      <p><strong>Kontakt:</strong><br>
+        Telefon: +49 (0) 150 00000000<br>
+        E-Mail: info@dcmobilecare.de</p>
+
+      <p><strong>Umsatzsteuer-ID:</strong><br>
+        Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz: DE123456789</p>
+
+      <p><strong>Redaktionell verantwortlich:</strong><br>
+        Davut Ceylan</p>
+    </div>
+  </div>
+
+  <div class="legal-modal" id="modal-datenschutz" data-modal>
+    <button class="modal-close" data-modal-close aria-label="Schließen"><i class="fa-solid fa-xmark"></i></button>
+    <div class="modal-content">
+      <h2>Datenschutz</h2>
+      <h3>1. Datenschutz auf einen Blick</h3>
+      <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert,
+        wenn Sie diese Website besuchen.</p>
+      <h3>2. Datenerfassung auf dieser Website</h3>
+      <p>Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem
+        Impressum dieser Website entnehmen.</p>
+      <p>Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten
+        handeln, die Sie in ein Kontaktformular eingeben.</p>
+    </div>
+  </div>
+
+  <!-- ========================== COOKIE BANNER ========================== -->
+  <div class="cookie-banner" id="cookie-banner" data-cookie-banner>
+    <div class="cookie-content">
+      <i class="fa-solid fa-cookie-bite"></i>
+      <div class="cookie-text">
+        <strong>Cookie-Einstellungen</strong>
+        <p>Wir nutzen Cookies, um Ihr Erlebnis zu verbessern. Durch die Nutzung unserer Website stimmen Sie der
+          Verwendung zu.</p>
+      </div>
+    </div>
+    <div class="cookie-actions">
+      <button class="btn btn-ghost btn-sm" data-cookie-settings>Einstellungen</button>
+      <button class="btn btn-primary btn-sm shimmer" data-cookie-accept>Alle akzeptieren</button>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>

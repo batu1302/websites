@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Arkadas Imbiss in Balingen. Traditioneller Döner, frische Zutaten, Premium Qualität seit 1991.">
+  <title>Arkadas Imbiss | Premium Döner Balingen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="film-grain" aria-hidden="true"></div>
+  <div class="ambient-glow" aria-hidden="true"></div>
+  <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
+  <header class="header">
+    <div class="header-inner container">
+      <a class="logo" href="#hero" aria-label="Startseite Arkadas Imbiss">
+        <span class="logo-main">ARKADAŞ</span>
+        <span class="logo-sub">IMBISS · SEIT 1991</span>
+      </a>
+      <nav class="nav" id="site-nav" aria-label="Hauptnavigation">
+        <a href="#tradition">Tradition</a>
+        <a href="#speisekarte">Speisekarte</a>
+        <a href="#standort">Standort</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section id="hero" class="hero" aria-label="Hero Bereich">
+      <div class="hero-bg">
+        <div class="hero-bg-parallax" id="hero-bg-parallax">
+          <img src="./assets/Download.jpeg" alt="Frisch geschnittener Döner mit gegrilltem Fleisch, Gemüse und Brot"
+            class="bg-img"
+            onerror="this.src='https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=2200&auto=format&fit=crop';">
+        </div>
+        <div class="hero-vignette" aria-hidden="true"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-edge-glow" aria-hidden="true"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-eyebrow" data-reveal>Balingens Bester Dreh</p>
+        <h1 class="hero-title" data-reveal><span class="hero-title-line">Genuss im</span> <span
+            class="hero-title-accent">Biss</span></h1>
+        <p class="hero-desc" data-reveal>Frisches Brot. Knackiges Gemüse. Perfekt gewürztes Fleisch.<br>Handwerklich
+          zubereitet seit über 30 Jahren.</p>
+        <div class="hero-cta" data-reveal>
+          <a href="#speisekarte" class="btn btn-primary btn-glow">Zur Speisekarte</a>
+        </div>
+      </div>
+      <a href="#tradition" class="hero-scroll-hint" aria-label="Weiter zur Tradition">
+        <span class="hero-scroll-text">Mehr entdecken</span>
+        <span class="hero-scroll-icon" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <section id="tradition" class="section tradition-section">
+      <div class="container layout-grid">
+        <div class="text-block" data-reveal>
+          <p class="section-eyebrow">Unsere Geschichte</p>
+          <h2 class="section-title">Erfahrung, die man schmeckt.</h2>
+          <p class="text-body">
+            Seit 1991 steht der Name Arkadas für kompromisslose Qualität. Wir verwenden nur ausgesuchte Zutaten,
+            marinieren unser Fleisch selbst und bereiten jede Portion mit größter Sorgfalt zu.
+          </p>
+          <p class="text-body">
+            Du findest unseren unverkennbaren Stand direkt auf dem toom-Parkplatz in Balingen. Ein Ort, an dem
+            Traditionsträume und echter Geschmack aufeinandertreffen.
+          </p>
+        </div>
+        <div class="image-block" data-reveal>
+          <div class="image-frame">
+            <img src="./assets/Download.jpeg" alt="Arkadas Imbiss Stand in Balingen"
+              onerror="this.src='https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1200&auto=format&fit=crop';">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="speisekarte" class="section menu-section">
+      <div class="container menu-container">
+        <div class="menu-header" data-reveal>
+          <p class="section-eyebrow">Klassiker & Spezialitäten</p>
+          <h2 class="section-title text-center">Unsere Speisekarte</h2>
+          <div class="gold-divider"></div>
+        </div>
+        <div class="menu-list">
+          <h3 class="menu-category" data-reveal>Klassiker vom Spieß</h3>
+          <div class="menu-item menu-item--sizes" data-reveal>
+            <h4 class="menu-item-name menu-item-name-standalone">Döner Kebab</h4>
+            <ul class="menu-size-lines" aria-label="Größen und Preise Döner">
+              <li class="menu-item-header">
+                <span class="menu-size-label">S</span>
+                <div class="menu-item-dots"></div>
+                <span class="menu-item-price">7,00 €</span>
+              </li>
+              <li class="menu-item-header">
+                <span class="menu-size-label">M</span>
+                <div class="menu-item-dots"></div>
+                <span class="menu-item-price">7,50 €</span>
+              </li>
+              <li class="menu-item-header">
+                <span class="menu-size-label">L</span>
+                <div class="menu-item-dots"></div>
+                <span class="menu-item-price">8,00 €</span>
+              </li>
+            </ul>
+            <p class="menu-item-desc">Im knusprig gebackenen Fladenbrot mit frischem Salat, Kraut und hausgemachter
+              Soße.</p>
+          </div>
+          <div class="menu-item menu-item--sizes" data-reveal>
+            <h4 class="menu-item-name menu-item-name-standalone">Dürüm (Yufka)</h4>
+            <ul class="menu-size-lines" aria-label="Größen und Preise Dürüm">
+              <li class="menu-item-header">
+                <span class="menu-size-label">S</span>
+                <div class="menu-item-dots"></div>
+                <span class="menu-item-price">7,50 €</span>
+              </li>
+              <li class="menu-item-header">
+                <span class="menu-size-label">M</span>
+                <div class="menu-item-dots"></div>
+                <span class="menu-item-price">8,50 €</span>
+              </li>
+              <li class="menu-item-header">
+                <span class="menu-size-label">L</span>
+                <div class="menu-item-dots"></div>
+                <span class="menu-item-price">9,50 €</span>
+              </li>
+            </ul>
+            <p class="menu-item-desc">Die meisterhaft gerollte Variante. Heiß serviert im feinen Yufka-Teig.</p>
+          </div>
+          <div class="menu-item" data-reveal>
+            <div class="menu-item-header">
+              <h4 class="menu-item-name">Lahmacun</h4>
+              <div class="menu-item-dots"></div>
+              <span class="menu-item-price">6,00 € - 7,00 €</span>
+            </div>
+            <p class="menu-item-desc">Türkische Pizza, wahlweise klassisch oder belegt mit zartem Dönerfleisch.</p>
+          </div>
+          <h3 class="menu-category mt-medium" data-reveal>Teller & Boxen</h3>
+          <div class="menu-item" data-reveal>
+            <div class="menu-item-header">
+              <h4 class="menu-item-name">Der Döner Teller</h4>
+              <div class="menu-item-dots"></div>
+              <span class="menu-item-price">11,00 € - 13,00 €</span>
+            </div>
+            <p class="menu-item-desc">Eine reichhaltige Portion Fleisch, wahlweise mit knusprigen Pommes Frites oder
+              zartem Reis, gereicht mit Beilagensalat.</p>
+          </div>
+          <div class="menu-item" data-reveal>
+            <div class="menu-item-header">
+              <h4 class="menu-item-name">Döner Box</h4>
+              <div class="menu-item-dots"></div>
+              <span class="menu-item-price">ab 6,50 €</span>
+            </div>
+            <p class="menu-item-desc">Premium-Snack für unterwegs. Schicht für Schicht Genuss mit Pommes und Soße.</p>
+          </div>
+          <h3 class="menu-category mt-medium" data-reveal>Vegetarisch</h3>
+          <div class="menu-item" data-reveal>
+            <div class="menu-item-header">
+              <h4 class="menu-item-name">Falafel Tasche</h4>
+              <div class="menu-item-dots"></div>
+              <span class="menu-item-price">ab 6,50 €</span>
+            </div>
+            <p class="menu-item-desc">Goldbraun frittierte Kichererbsenbällchen im Brot, verfeinert mit frischen
+              Kräutern und Salat.</p>
+          </div>
+        </div>
+        <p class="menu-disclaimer" data-reveal>Alle Preise inkl. MwSt. Preise vor Ort können leicht abweichen.</p>
+      </div>
+    </section>
+
+    <footer id="standort" class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-info" data-reveal>
+            <div class="logo-footer">ARKADAŞ IMBISS</div>
+            <ul class="contact-list">
+              <li class="contact-item">
+                <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 22s7-5.5 7-12a7 7 0 1 0-14 0c0 6.5 7 12 7 12zm0-9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z">
+                  </path>
+                </svg>
+                <div>
+                  <p class="contact-label">Adresse</p>
+                  <p class="contact-value">Lange Straße 44, 72336 Balingen<br>(am toom Baumarkt)</p>
+                </div>
+              </li>
+              <li class="contact-item">
+                <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2a10 10 0 1 0 .01 20.01A10 10 0 0 0 12 2zm1 5v5.59l3.7 2.2-1 1.72L11 13V7h2z"></path>
+                </svg>
+                <div>
+                  <p class="contact-label contact-highlight">Öffnungszeiten:</p>
+                  <p class="contact-value">Montag - Samstag: 10:00 - 20:00 Uhr<br>Sonntag: Ruhetag</p>
+                </div>
+              </li>
+              <li class="contact-item">
+                <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.3 1.3.4 2.7.6 4.1.6.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10.3 22.2 1.8 13.7 1.8 3.2 1.8 2.5 2.3 2 3 2h4.5c.7 0 1.2.5 1.2 1.2 0 1.4.2 2.8.6 4.1.1.4 0 .9-.3 1.2l-2.4 2.3z">
+                  </path>
+                </svg>
+                <div>
+                  <p class="contact-label contact-highlight">Telefon:</p>
+                  <p class="contact-value"><a href="tel:+4915251744728" class="phone-link">+49 1525 1744728</a></p>
+                </div>
+              </li>
+            </ul>
+            <div class="footer-contact-actions">
+              <a href="tel:+4915251744728" class="btn btn-ghost footer-btn">Anrufen</a>
+              <a href="https://maps.google.com/?q=Lange+Str.+44,+72336+Balingen" target="_blank"
+                rel="noopener noreferrer" class="btn btn-ghost footer-btn">Route</a>
+            </div>
+            <div class="social-row" aria-label="Social Media">
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="social-link"
+                aria-label="Arkadas Imbiss auf Instagram">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zm5.2-3.3a1.1 1.1 0 1 1-1.1 1.1 1.1 1.1 0 0 1 1.1-1.1z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-map" aria-label="Karte Arkadas Imbiss" data-reveal>
+            <div id="map" class="map-canvas"></div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="legal-links">
+            <button type="button" class="legal-link" data-open-modal="impressum-modal">Impressum</button>
+            <span class="sep">|</span>
+            <button type="button" class="legal-link" data-open-modal="datenschutz-modal">Datenschutz</button>
+          </div>
+          <p class="copyright">&copy; 2026 Arkadas Imbiss. Alle Rechte vorbehalten.</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <section class="modal" id="impressum-modal" aria-hidden="true" role="dialog" aria-labelledby="impressum-title">
+    <div class="modal-content">
+      <button type="button" class="modal-close" data-close-modal aria-label="Fenster schließen">&times;</button>
+      <h2 id="impressum-title">Impressum</h2>
+      <p><strong>Angaben gemaß § 5 TMG</strong></p>
+      <p>ARKADAŞ IMBISS<br>Lange Straße 44<br>72336 Balingen</p>
+      <p><strong>Vertreten durch:</strong><br>Inhaber: Mehmet Arkadas</p>
+      <p><strong>Kontakt:</strong><br>Telefon: <a href="tel:+4915251744728">+49 1525 1744728</a><br>E-Mail: <a
+          href="mailto:info@arkadas-imbiss.de">info@arkadas-imbiss.de</a></p>
+      <p><strong>Haftung für Inhalte</strong><br>Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für
+        die Richtigkeit, Vollständigkeit und Aktualität der Inhalte wird keine Gewähr übernommen.</p>
+    </div>
+  </section>
+
+  <section class="modal" id="datenschutz-modal" aria-hidden="true" role="dialog" aria-labelledby="datenschutz-title">
+    <div class="modal-content">
+      <button type="button" class="modal-close" data-close-modal aria-label="Fenster schließen">&times;</button>
+      <h2 id="datenschutz-title">Datenschutz</h2>
+      <p><strong>1. Verantwortlicher</strong><br>ARKADAŞ IMBISS, Lange Straße 44, 72336 Balingen.</p>
+      <p><strong>2. Server-Logfiles</strong><br>Beim Aufruf der Website werden technisch notwendige Daten (z. B.
+        Browsertyp, Datum/Uhrzeit, IP-Adresse) verarbeitet, um die Seite sicher bereitzustellen.</p>
+      <p><strong>3. Karten-Dienst</strong><br>Für die Kartenanzeige wird ein externer Kartendienst geladen. Dabei können
+        technische Daten an den Kartenanbieter übermittelt werden.</p>
+      <p><strong>4. Kontaktaufnahme</strong><br>Bei Anrufen oder E-Mails werden deine Angaben nur zur Bearbeitung deiner
+        Anfrage verwendet.</p>
+      <p><strong>5. Deine Rechte</strong><br>Du hast ein Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der
+        Verarbeitung und Beschwerde bei der zuständigen Aufsichtsbehörde.</p>
+    </div>
+  </section>
+
+  <section class="cookie-banner" id="cookie-banner" aria-live="polite" aria-label="Cookie Einstellungen">
+    <div class="cookie-inner container">
+      <p>Wir verwenden technisch notwendige Cookies und optional Statistik-Cookies, um die Website zu verbessern.</p>
+      <div class="cookie-actions">
+        <button type="button" class="btn btn-ghost" id="cookie-decline">Nur notwendige</button>
+        <button type="button" class="btn btn-primary" id="cookie-accept">Alle akzeptieren</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="script.js" defer></script>
+</body>
+
+</html>

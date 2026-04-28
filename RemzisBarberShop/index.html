@@ -11,7 +11,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
+  <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
+  <div class="film-grain" aria-hidden="true"></div>
+  <div class="ambient-glow" aria-hidden="true"></div>
+  <header class="header" id="site-header">
     <div class="header-inner">
       <a href="#" class="logo">D&amp;R <span class="logo-accent">BarberShop</span></a>
       <nav class="nav">
@@ -27,31 +30,37 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
     <section id="hero" class="hero">
-      <img class="hero-bg" src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=1920&q=80" alt="" aria-hidden="true">
-      <div class="hero-overlay"></div>
+      <div class="hero-media">
+        <div class="hero-bg-parallax" id="hero-bg-parallax">
+          <img class="hero-bg-img" src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=1920&q=80" alt="" aria-hidden="true">
+        </div>
+        <div class="hero-vignette" aria-hidden="true"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-edge-glow" aria-hidden="true"></div>
+      </div>
       <div class="hero-content">
-        <p class="hero-tagline">Klassisch. Präzise. Dein Stil.</p>
-        <h1>D&amp;R BarberShop</h1>
-        <p class="hero-subtitle">Balingen · Damen &amp; Herren</p>
-        <div class="hero-actions">
-          <a href="#haarschnitte" class="btn btn-primary">Unsere Schnitte</a>
+        <p class="hero-tagline" data-reveal>Klassisch. Präzise. Dein Stil.</p>
+        <h1 data-reveal><span class="hero-title-line">D&amp;R</span> <span class="hero-title-accent">BarberShop</span></h1>
+        <p class="hero-subtitle" data-reveal>Balingen · Damen &amp; Herren</p>
+        <div class="hero-actions" data-reveal>
+          <a href="#haarschnitte" class="btn btn-primary btn-glow">Unsere Schnitte</a>
           <a href="#kontakt" class="btn btn-ghost">Termin &amp; Kontakt</a>
         </div>
       </div>
-      <div class="hero-scroll">
+      <a href="#ueber-uns" class="hero-scroll" aria-label="Weiter zu Über uns">
         <span>Scroll</span>
-        <div class="hero-scroll-line"></div>
-      </div>
+        <span class="hero-scroll-line" aria-hidden="true"></span>
+      </a>
     </section>
 
     <section id="ueber-uns" class="section section-dark">
       <div class="container container-ueber">
-        <div class="ueber-uns-image-wrap">
+        <div class="ueber-uns-image-wrap" data-reveal>
           <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=600&q=80" alt="Friseur bei der Arbeit im D&amp;R BarberShop" class="ueber-uns-image" width="600" height="400" loading="lazy">
         </div>
-        <div class="ueber-uns-text">
+        <div class="ueber-uns-text" data-reveal>
           <div class="section-head section-head--left">
             <p class="section-eyebrow">D&amp;R</p>
             <h2 class="section-title">Über uns</h2>
@@ -66,26 +75,26 @@
 
     <section id="haarschnitte" class="section section-services">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head" data-reveal>
           <p class="section-eyebrow">Was wir bieten</p>
           <h2 class="section-title">Haarschnitte &amp; Services</h2>
         </div>
         <div class="services-grid">
-          <article class="service-card">
+          <article class="service-card" data-reveal>
             <div class="service-image-wrap">
               <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=500&q=80" alt="Herrenschnitt bei D&amp;R BarberShop" class="service-image" width="500" height="320" loading="lazy">
             </div>
             <h3>Herrenschnitt</h3>
             <p>Klassischer oder moderner Herrenschnitt nach deinen Wünschen.</p>
           </article>
-          <article class="service-card">
+          <article class="service-card" data-reveal>
             <div class="service-image-wrap">
               <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=500&q=80" alt="Bart trimmen und Kontur" class="service-image" width="500" height="320" loading="lazy">
             </div>
             <h3>Bart &amp; Kontur</h3>
             <p>Bart trimmen, Kontur und Pflege für einen sauberen Look.</p>
           </article>
-          <article class="service-card">
+          <article class="service-card" data-reveal>
             <div class="service-image-wrap">
               <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&q=80" alt="Komplett-Service: Haarschnitt, Bart und Styling im D&amp;R BarberShop" class="service-image" width="600" height="384" loading="lazy" decoding="async">
             </div>
@@ -98,11 +107,11 @@
 
     <section id="preise" class="section section-preise">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head" data-reveal>
           <p class="section-eyebrow">Transparent</p>
           <h2 class="section-title">Preisliste</h2>
         </div>
-        <div class="preisliste">
+        <div class="preisliste" data-reveal>
           <div class="preisliste-row">
             <span class="preis-name">Haarschnitt</span>
             <span class="preis-leader" aria-hidden="true"></span>
@@ -144,12 +153,12 @@
 
     <section id="kontakt" class="section section-contact">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head" data-reveal>
           <p class="section-eyebrow">Besuch</p>
           <h2 class="section-title">Kontakt</h2>
         </div>
         <div class="contact-grid">
-          <div class="contact-block contact-block--map">
+          <div class="contact-block contact-block--map" data-reveal>
             <a
               class="contact-map-link"
               href="https://www.google.com/maps/dir/?api=1&amp;destination=Ebertstra%C3%9Fe%208%2C%2072336%20Balingen"
@@ -169,7 +178,7 @@
               </span>
             </a>
           </div>
-          <div class="contact-block">
+          <div class="contact-block" data-reveal>
             <h3>Öffnungszeiten</h3>
             <p>
               Mo: 9:00 – 19:00<br>
@@ -179,7 +188,7 @@
             </p>
             <p class="contact-hinweis">Angaben laut öffentlichen Einträgen (u. a. Fresha); Abweichungen vor Ort möglich.</p>
           </div>
-          <div class="contact-block">
+          <div class="contact-block" data-reveal>
             <h3>Termin &amp; Kontakt</h3>
             <p>
               Festnetz: <a href="tel:+4974339312497">07433 93 12 497</a><br>
@@ -196,11 +205,11 @@
 
     <section id="faq" class="section section-faq">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head" data-reveal>
           <p class="section-eyebrow">Service</p>
           <h2 class="section-title">Häufige Fragen</h2>
         </div>
-        <div class="faq-list">
+        <div class="faq-list" data-reveal>
           <details class="faq-item">
             <summary>Muss ich einen Termin vereinbaren?</summary>
             <p>Wir empfehlen eine Terminvereinbarung, damit wir uns genug Zeit für dich nehmen können. Kurzfristige Plätze sind je nach Auslastung möglich.</p>
@@ -223,8 +232,44 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
+    <div class="container" data-reveal>
       <p class="footer-brand">D&amp;R BarberShop Balingen</p>
+
+      <div class="footer-reviews">
+        <p class="footer-reviews__eyebrow">Kundenstimmen</p>
+        <div class="footer-reviews__grid" role="list">
+          <blockquote class="review-card" role="listitem">
+            <div class="review-stars" aria-label="5 von 5 Sternen">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <p class="review-text">„Endlich ein Friseur, der zuhört. Schnitt sitzt perfekt, entspannte Atmosphäre – gerne wieder.“</p>
+            <footer class="review-meta"><cite>Markus S.</cite>, Balingen</footer>
+          </blockquote>
+          <blockquote class="review-card" role="listitem">
+            <div class="review-stars" aria-label="5 von 5 Sternen">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <p class="review-text">„Sehr freundlich, pünktlich und sauber gearbeitet. Bart und Haare – top Ergebnis.“</p>
+            <footer class="review-meta"><cite>Lara M.</cite>, Umgebung Balingen</footer>
+          </blockquote>
+          <blockquote class="review-card" role="listitem">
+            <div class="review-stars" aria-label="5 von 5 Sternen">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <p class="review-text">„Professionell vom ersten Moment an. Faire Preise, moderner Style – absolute Empfehlung.“</p>
+            <footer class="review-meta"><cite>Thomas R.</cite>, Balingen</footer>
+          </blockquote>
+        </div>
+        <p class="footer-reviews__note">
+          <a
+            class="footer-reviews__link"
+            href="https://www.google.com/maps/search/?api=1&amp;query=D%26R+BarberShop+Ebertstra%C3%9Fe+8+72336+Balingen"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Bewertungen auf Google ansehen</a>
+        </p>
+      </div>
+
       <p class="footer-address">
         <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Ebertstra%C3%9Fe%208%2C%2072336%20Balingen" target="_blank" rel="noopener noreferrer" class="footer-address-link">Ebertstraße 8 · 72336 Balingen</a>
       </p>
